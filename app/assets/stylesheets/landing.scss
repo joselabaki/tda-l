@@ -1,3 +1,81 @@
 // Place all the styles related to the landing controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$sable : #fff7ee;
+$ciel: #2a3791;
+$or : #9b883b;
+@font-face { font-family: Aeonik;
+    src: url('fonts/Aeonik-Regular.otf');
+        src: font_url('Aeonik-Regular.otf');
+}
+
+
+///////
+*:focus{
+ outline: none;
+}
+
+textarea, select, input, button { outline: none; }
+
+body{
+background-color: $sable;
+font-family: Aeonik , sans-serif;
+a , #email-field{font-family: Aeonik , sans-serif;
+  color: $or;
+  text-decoration: none;
+  font-size: 20px;
+}};
+
+
+ .main-container {
+
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+ }
+.newsletter{
+  margin: 90px 0;
+
+}
+.links{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .email{text-align: end}
+  a{  &:hover{padding-bottom: 5px ; border-bottom: 1px solid $or;}
+}
+
+}
+
+.updates{
+  display: grid;
+  grid-template-columns: 60% 20%;
+  grid-column-gap: 20%;
+
+  #email-field {
+        border: none;
+        border-bottom: 1px solid $or;
+        background: none;
+}
+#submit_btn{
+  width: 10%;
+  border: none;
+  background: none;
+  justify-self: end;
+}
+
+}
+
+#emailMsg{
+height: 2px;
+  font-family: Aeonik, sans-serif;
+  font-size: 16px;
+  padding: 0;margin: 0
+}
+
+.text-success{color: $sable}
+.text-danger{color: red; margin: 0 ; margin-top: 1px;}

@@ -59,3 +59,4 @@ gem 'inline_svg'
 gem "browser"
 gem 'figaro'
 gem 'gibbon', :git => 'https://github.com/amro/gibbon.git'
+gem 'jquery-rails'

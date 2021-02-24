@@ -1,10 +1,15 @@
-<div class="newsletter">Newsletter<br>
+<div class="main-container">
+
+<div class="logo">
+<%= inline_svg_tag 'TdA-Logo.svg'%>
+</div>
+
+<div class="newsletter">
 
   <%= form_tag('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do -%>
-    <div class="email_field">
-
-    <%= email_field(:email, :address, {id: "email-field", placeholder: "Your email"}) %>
-    <%= submit_tag("Sign up", {id: "submit_btn"}) %>
+    <div class="updates">
+    <%= email_field(:email, :address, {id: "email-field", placeholder: "Let me know when the site is ready"}) %>
+    <%= image_submit_tag("submit.png", id: "submit_btn") %>
     <div id="emailMsg"></div>
   </div>
 
@@ -12,7 +17,71 @@
 
 </div>
 
-<br>
-<div class="contacts"><%=link_to 'Instagram' , 'https://instagram.com/terresdailleurs' , target: "_blank" %></div>
+<div class="links">
 
-<div class="contact-phone"><a href="mailto:info@lesterresdailleurs.com">contact us</a></div>
+<div class="instagram"><%=link_to 'Instagram' , 'https://instagram.com/terresdailleurs' , target: "_blank" %></div>
+<div class="email"><a href="mailto:info@lesterresdailleurs.com">Contact us</a></div>
+
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+		$("#submit_btn").attr('disabled', 'disabled');
+
+    $("#email-field").keyup(function(){
+    			if(validateEmail()){
+    				// if the email is validated
+    				// set input email border green
+            $("#email-field").css("border-bottom","1px solid #9b883b");
+
+    				// and set label
+            $("#emailMsg").html("<p class='text-success'>valid email</p>");
+
+    			}else{
+    				// if the email is not validated
+    				// set border red
+    				$("#email-field").css("border-bottom","1px solid red");
+    				$("#emailMsg").html("<p class='text-danger'>invalid email</p>");
+    			}
+    			buttonState();
+    		});
+
+        function buttonState(){
+        		if(validateEmail() ){
+        			// if the both email and password are validate
+        			// then button should show visible
+              $("#submit_btn").removeAttr("disabled")
+
+        		}else{
+        			// if both email and pasword are not validated
+        			// button state should hidden
+              $("#submit_btn").attr('disabled', 'disabled');
+        		}
+        	} //Button State
+
+          function validateEmail(){
+          		// get value of input email
+          		var email=$("#email-field").val();
+          		// use reular expression
+          		 var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+          		 if(reg.test(email)){
+          		 	return true;
+          		 }else{
+          		 	return false;
+          		 }
+
+          	}
+
+
+
+
+  }); //Docready
+
+
+
+
+</script>
