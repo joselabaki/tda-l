@@ -25,13 +25,13 @@ font-family: Aeonik , sans-serif;
 a , #email-field{font-family: Aeonik , sans-serif;
   color: $or;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1em;
 }};
 
 
  .main-container {
 
-  width: 30%;
+  width: 25%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -39,7 +39,7 @@ a , #email-field{font-family: Aeonik , sans-serif;
   transform: translate(-50%, -50%);
  }
 .newsletter{
-  margin: 12% 0;
+  margin: 15% 0;
 
 }
 .links{
@@ -48,7 +48,7 @@ a , #email-field{font-family: Aeonik , sans-serif;
   .email{text-align: end}
   a{  &:hover{padding-bottom: 5px ; border-bottom: 1px solid $or;}
 }
-
+.logo{width: 80%}
 }
 
 .updates{
@@ -89,7 +89,7 @@ height: 2px;
 
 
 .north-arrow{
-  width: .9%;
+  width: 1%;
   position: absolute;
   left: 20%;
   bottom: 5%;
@@ -104,7 +104,7 @@ height: 2px;
 }
 
 .fedora{
-    width: 12%;
+    width: 14%;
     position: absolute;
     left: 10%;
     top: 20%;
@@ -113,7 +113,7 @@ height: 2px;
 
 
 .moyra{
-    width: 13%;
+    width: 15%;
     position: absolute;
     right: 10%;
     bottom: 50%;
