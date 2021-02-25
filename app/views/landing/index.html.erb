@@ -1,3 +1,43 @@
+
+<% if browser.device.mobile? %>
+<div class="test">
+  <div class="main-container-mobile">
+
+  <div class="logo">
+  <%= inline_svg_tag 'TdA-Logo.svg'%>
+  </div>
+
+  <div class="newsletter">
+
+    <%= form_tag('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do -%>
+      <div class="updates">
+      <%= email_field(:email, :address, {id: "email-field", placeholder: "Let me know when the site is ready"}) %>
+      <%= image_submit_tag("submit.png", id: "submit_btn") %>
+      <div id="emailMsg"></div>
+    </div>
+
+      <% end %>
+
+  </div>
+
+  <div class="links">
+
+  <div class="instagram"><%=link_to 'Instagram' , 'https://instagram.com/terresdailleurs' , target: "_blank" %></div>
+  <div class="email"><a href="mailto:info@lesterresdailleurs.com">Contact us</a></div>
+
+  </div>
+
+  </div>
+
+
+
+
+</div>
+
+
+<%else%>
+
+
 <div class="main-container">
 
 <div class="logo">
@@ -30,6 +70,13 @@
 <div class="arctic"><%= inline_svg_tag 'arctic-bottomless.svg' %></div>
 <div class="fedora"><%= inline_svg_tag 'Fedora.svg' %></div>
 <div class="moyra"><%= inline_svg_tag 'Moyra.svg' %></div>
+
+
+<% end %>
+
+
+
+
 
 
 
@@ -89,8 +136,6 @@ $(document).ready(function(){
 
 
   }); //Docready
-
-
 
 
 </script>

@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-$sable : #fffbf;
+$sable : #fffbf9;
 $ciel: #2a3791;
 $or : #9b883b;
 @font-face { font-family: Aeonik;
@@ -66,10 +66,7 @@ a , #email-field{font-family: Aeonik , sans-serif;
   border: none;
   background: none;
   justify-self: end;
-}
-
-
-}
+}}
 
 #emailMsg{
 height: 2px;
@@ -78,7 +75,7 @@ height: 2px;
   padding: 0;margin: 0;margin-top: 5px;
 }
 
-.text-success{color: $or}
+.text-success{color: $or;margin: 0 ; margin-top: 5px;}
 .text-danger{color: coral; margin: 0 ; margin-top: 5px;}
 
 
@@ -117,4 +114,19 @@ height: 2px;
     position: absolute;
     right: 10%;
     bottom: 50%;
+}
+
+/////// MOBILE
+
+.main-container-mobile {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  .updates{
+  #email-field{font-size: .8em;}
+  }
 }
