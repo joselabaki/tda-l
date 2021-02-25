@@ -143,12 +143,16 @@ height: 2px;
   width: 120%;
   position: absolute;
   bottom: 0;
+  .cls-1{fill: $ciel}
+
 }
 .moyra{
   width: 45%;
   position: absolute;
   top: 35%;
   left: 50%;
+  .cls-1{fill: $ciel}
+
 
 }
 .fedora{
@@ -156,6 +160,8 @@ height: 2px;
   position: absolute;
   top: 5%;
   left: -15%;
+  .cls-1{fill: $ciel}
+
 
 }
 
