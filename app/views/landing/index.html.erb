@@ -8,10 +8,10 @@
   </div>
 
   <div class="newsletter">
-
+<div class="text-success" id="sub-text">Let me know when the site is ready</div>
     <%= form_tag('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do -%>
       <div class="updates">
-      <%= email_field(:email, :address, {id: "email-field", placeholder: "Let me know when the site is ready"}) %>
+      <%= email_field(:email, :address, {id: "email-field", placeholder: "Your email"}) %>
       <%= image_submit_tag("submit.png", id: "submit_btn") %>
       <div id="emailMsg"></div>
     </div>
@@ -52,10 +52,10 @@
 </div>
 
 <div class="newsletter">
-
+<div class="text-success" id="sub-text">Let me know when the site is ready</div>
   <%= form_tag('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do -%>
     <div class="updates">
-    <%= email_field(:email, :address, {id: "email-field", placeholder: "Let me know when the site is ready"}) %>
+    <%= email_field(:email, :address, {id: "email-field", placeholder: "Your email"}) %>
     <%= image_submit_tag("submit.png", id: "submit_btn") %>
     <div id="emailMsg"></div>
   </div>

@@ -11,6 +11,21 @@ $or : #9b883b;
         src: font_url('Aeonik-Regular.otf');
 }
 
+@font-face { font-family: AeonikLI;
+    src: url('fonts/Aeonik-LightItalic.otf');
+        src: font_url('Aeonik-LightItalic.otf');
+}
+
+@font-face { font-family: AeonikL;
+    src: url('fonts/Aeonik-Light.otf');
+        src: font_url('Aeonik-Light.otf');
+}
+
+@font-face { font-family: AeonikB;
+    src: url('fonts/Aeonik-Bold.otf');
+        src: font_url('Aeonik-Bold.otf');
+}
+
 
 ///////
 *:focus{
@@ -60,6 +75,7 @@ a , #email-field{font-family: Aeonik , sans-serif;
         border: none;
         border-bottom: 1px solid $or;
         background: none;
+        font-family: AeonikLI , sans-serif;
 }
 #submit_btn{
   width: 18%;
@@ -75,10 +91,10 @@ height: 2px;
   padding: 0;margin: 0;margin-top: 5px;
 }
 
-.text-success{color: $or;margin: 0 ; margin-top: 5px;}
-.text-danger{color: coral; margin: 0 ; margin-top: 5px;}
+.text-success{font-family: AeonikL, sans-serif; color: $or;margin: 0 ; margin-top: 5px;}
+.text-danger{font-family: AeonikL, sans-serif; color: coral; margin: 0 ; margin-top: 5px;}
 
-
+#sub-text{margin-bottom: 5px; font-family: Aeonik, sans-serif}
 
 
 
@@ -173,4 +189,6 @@ height: 2px;
   grid-template-columns: 3fr 1fr;
 
 }
+#sub-text{margin: 20px 0; font-family: Aeonik, sans-serif}
+
 }
