@@ -26,6 +26,15 @@
 
 </div>
 
+<div class="north-arrow"><%= inline_svg_tag 'North.svg' %></div>
+<div class="arctic"><%= inline_svg_tag 'arctic-bottomless.svg' %></div>
+<div class="fedora"><%= inline_svg_tag 'Fedora.svg' %></div>
+<div class="moyra"><%= inline_svg_tag 'Moyra.svg' %></div>
+
+
+
+
+
 <script type="text/javascript">
 
 
@@ -44,7 +53,7 @@ $(document).ready(function(){
     			}else{
     				// if the email is not validated
     				// set border red
-    				$("#email-field").css("border-bottom","1px solid red");
+    				$("#email-field").css("border-bottom","1px solid coral");
     				$("#emailMsg").html("<p class='text-danger'>invalid email</p>");
     			}
     			buttonState();
