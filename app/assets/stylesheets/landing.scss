@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-$sable : #fffbf4;
+$sable : #fffbf;
 $ciel: #2a3791;
 $or : #9b883b;
 @font-face { font-family: Aeonik;
@@ -25,7 +25,7 @@ font-family: Aeonik , sans-serif;
 a , #email-field{font-family: Aeonik , sans-serif;
   color: $or;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.1em;
 }};
 
 
@@ -39,7 +39,7 @@ a , #email-field{font-family: Aeonik , sans-serif;
   transform: translate(-50%, -50%);
  }
 .newsletter{
-  margin: 90px 0;
+  margin: 12% 0;
 
 }
 .links{
@@ -53,8 +53,8 @@ a , #email-field{font-family: Aeonik , sans-serif;
 
 .updates{
   display: grid;
-  grid-template-columns: 60% 20%;
-  grid-column-gap: 20%;
+  grid-template-columns: 80% 20%;
+  //grid-column-gap: 20%;
 
   #email-field {
         border: none;
@@ -89,15 +89,15 @@ height: 2px;
 
 
 .north-arrow{
-  width: 20px;
+  width: .9%;
   position: absolute;
-  left: 300px;
-  bottom: 100px;
+  left: 20%;
+  bottom: 5%;
   .cls-1{fill: $or}
 }
 
 .arctic{
-  width: 50%;
+  width: 40%;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -106,8 +106,8 @@ height: 2px;
 .fedora{
     width: 12%;
     position: absolute;
-    left: 200px;
-    top: 200px;
+    left: 10%;
+    top: 20%;
     transform: scale(-1,1);
 }
 
@@ -115,6 +115,6 @@ height: 2px;
 .moyra{
     width: 13%;
     position: absolute;
-    right: 200px;
-    bottom: 600px;
+    right: 10%;
+    bottom: 50%;
 }
