@@ -1,0 +1,28 @@
+$sable : #FFECD2;
+$ciel: #2a3791;
+$or : #9b883b;
+@font-face { font-family: Aeonik;
+    src: url('fonts/Aeonik-Regular.otf');
+        src: font_url('Aeonik-Regular.otf');
+}
+
+@font-face { font-family: AeonikLI;
+    src: url('fonts/Aeonik-LightItalic.otf');
+        src: font_url('Aeonik-LightItalic.otf');
+}
+
+@font-face { font-family: AeonikL;
+    src: url('fonts/Aeonik-Light.otf');
+        src: font_url('Aeonik-Light.otf');
+}
+
+@font-face { font-family: AeonikB;
+    src: url('fonts/Aeonik-Bold.otf');
+        src: font_url('Aeonik-Bold.otf');
+}
+
+
+@font-face { font-family: Love;
+    src: url('fonts/Love-Regular.eot');
+    src: font_url('Love-Regular.woff');
+}

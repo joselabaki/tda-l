@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Terres d'Ailleurs</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+  </head>
+
+  <body>
+
+<div class="master-container">
+
+
+    <div class="top-nav">
+      <div class="logo-nav">
+        <%= link_to home_path do %><%= inline_svg_tag 'TdA-Logo.svg'%><% end %>
+      </div>
+
+      <div class="links">
+      <p><%= link_to "about", about_path %></p>
+      <p><%= link_to "cocktails", cocktails_path %></p>
+      <p><%= link_to "stories", stories_path %></p>
+      <p><%= link_to "contact", contact_path %></p>
+      <p id="shop"><%= link_to "shop", shop_path %></p>
+      <%= inline_svg_tag 'Arrow.svg' , id: 'arrow-nav'%>
+      </div><!--links-->
+    </div>
+
+
+
+
+
+
+
+
+
+    <%= yield %>
+
+    </div>
+</body>
+
+
+
+</html>

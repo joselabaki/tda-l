@@ -11,3 +11,21 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+
+window.onload = function() {
+
+$( ".block-title").click(function() {
+   $(this).next().slideToggle()
+});
+
+$( ".inquire-title").mouseenter(function() {
+  $(this).next().show()
+})
+
+$( ".inquire-title").mouseleave(function() {
+  $(this).next().hide()
+})
+
+
+}

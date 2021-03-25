@@ -1,0 +1,35 @@
+
+@import 'variables';
+
+body{
+  background-color: $sable;
+}
+
+
+
+.master-container {
+  margin: auto 5%;
+}
+
+
+
+
+.top-nav{
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 10% auto;
+  padding-bottom: 30px;
+  border-bottom: 2px solid $ciel;
+
+  .links {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 1em;
+      a{color: $ciel; &:hover{border-bottom: 2px solid $ciel;}};
+      p{padding-right: 6%; }
+      #arrow-nav{width: 5%;}
+      #shop{padding-right: 10px;; a{&:hover{border-bottom: 0px;}}}
+  }
+}

@@ -1,0 +1,49 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'variables';
+
+
+///// ABOUT PAGE /////
+
+.about-block{
+  width: 30%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.block-title{
+  font-family: Love , sans-serif;
+  font-size: 8.5em;;
+  color: $ciel;
+  padding-bottom: 3%;
+
+}
+
+
+
+.block-text{
+  display: none;
+  font-family: AeonikL;
+  font-size: 1.25em;
+  color: $ciel;
+  #subhead {color: $or; font-family: AeonikB , sans-serif; font-weight: 300}
+  padding-bottom: 8%;
+  margin-left: 15%;
+}
+
+//////CONCTACT PAGE /////
+
+.contact-page{margin-top: 5%;
+  #arrow-nav{width: 8%; margin-left: 45px;display: none;}
+
+}
+.title-arrow{display: inline-flex; align-content: center;margin-bottom: 2%;}
+.inquire-title{
+
+  a{
+  font-family: Love , sans-serif;
+  font-size: 4em;
+  color: $ciel;
+
+}}
