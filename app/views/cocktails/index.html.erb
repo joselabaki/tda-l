@@ -1,0 +1,28 @@
+  <% @cocktails.each do |c| %>
+<div class="big-box">
+<div class="title-box">
+
+<div class="cocktail-image"></div>
+<div class="name-author">
+  <p class="cocktail-name"><%= c.name%></p>
+  <p class="cocktail-info"> <%= c.creator %> - <%= c.city %> </p>
+
+</div>
+
+
+
+</div>
+<div class="recipe-box">
+<p class="cocktail-com">Ingredients</p>
+<p class="cocktail-ing"><%= c.ingredient %></p>
+<div class="side-info">
+<p class="cocktail-com">Garnish</p>
+<p class="cocktail-ing"><%= c.garnish %></p>
+<p class="spacer"></p>
+<p class="cocktail-com">Serving</p>
+<p class="cocktail-ing"><%= c.serving %></p>
+</div>
+</div>
+</div>
+
+<% end %>

@@ -1,0 +1,61 @@
+// Place all the styles related to the cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables";
+.big-box{
+  display: grid;
+margin-top: 7%;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-template-areas:
+  "a b"
+}
+
+.title-box{
+  grid-area: a;
+//  background-color: lightgrey;
+  display: grid;
+justify-content:center;
+align-items: center;
+text-align: center;
+.cocktail-image{}
+.cocktail-name {
+  font-family: Love , sans-serif;
+  font-size: 4em;
+  margin-bottom: 2%;
+  color: $ciel;
+
+}
+.cocktail-info{
+font-family: Aeonik, sans-serif;
+font-size: 1.35em;
+color: $or;
+margin-top: 0;
+
+}
+}
+
+.recipe-box{
+  grid-area: b;
+//  background-color: beige;
+.cocktail-com{
+  font-family: AeonikB, sans-serif;
+margin-bottom: 0;
+  font-size: 1.35em;
+  color: $or
+};
+.cocktail-ing{
+  white-space: pre-line;
+  font-family: AeonikL, sans-serif;
+  color: $ciel;
+  font-size: 1.2em;
+  margin-top: 1%;
+  margin-bottom: 5%;
+
+}
+.side-info{
+  margin-left: 10%;
+  width: 25%;}
+
+  .spacer{height: 8%;}
+}

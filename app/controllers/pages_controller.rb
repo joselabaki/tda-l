@@ -5,8 +5,6 @@ class PagesController < ApplicationController
   def about
   end
 
-  def cocktails
-  end
 
   def stories
   end

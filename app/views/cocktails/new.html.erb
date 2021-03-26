@@ -1,0 +1,26 @@
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@cocktail) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %><br>
+
+      <%= f.label :creator %>
+      <%= f.text_field :creator %><br>
+
+      <%= f.label :city %>
+      <%= f.text_field :city %><br>
+
+      <%= f.label :ingredient %>
+      <%= f.text_area :ingredient ,  size: "100x10" %><br>
+
+      <%= f.label :garnish %>
+      <%= f.text_area :garnish,  size: "100x10" %><br>
+
+      <%= f.label :serving %>
+      <%= f.text_area :serving ,  size: "100x10"%><br>
+
+      <%= f.submit "Create Cocktail" %>
+    <% end %>
+  </div>
+</div>
