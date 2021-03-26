@@ -6,7 +6,8 @@
 <div class="name-author">
   <p class="cocktail-name"><%= c.name%></p>
   <p class="cocktail-info"> <%= c.creator %> - <%= c.city %> </p>
-
+  <%= inline_svg_tag 'download.svg' , id:'download-icon'%>
+  <%= inline_svg_tag 'share.svg' , id:'share-icon'%>
 </div>
 
 
@@ -23,6 +24,7 @@
 <p class="cocktail-ing"><%= c.serving %></p>
 </div>
 </div>
+<div class="big-spacer"></div>
 </div>
 
 <% end %>

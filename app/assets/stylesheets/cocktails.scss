@@ -34,6 +34,11 @@ margin-top: 0;
 
 }
 }
+.name-author{
+  #download-icon, #share-icon{width: 3%;}
+#download-icon{padding-right: 2%}
+#share-icon{padding-left: 2%;}
+}
 
 .recipe-box{
   grid-area: b;
@@ -59,3 +64,4 @@ margin-bottom: 0;
 
   .spacer{height: 8%;}
 }
+.big-spacer{height: 300px; }
