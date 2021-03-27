@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+
   get 'stories', to: 'pages#stories'
   get 'about', to:'pages#about'
   get 'contact', to:'pages#contact'
@@ -9,6 +10,7 @@ Rails.application.routes.draw do
 
 
   resources :cocktails
+  resources :products
 
 
 
