@@ -54,7 +54,7 @@ end
  private
 
    def cocktail_params
-     params.require(:cocktail).permit(:name, :creator, :city, :ingredient, :garnish , :serving ,:image)
+     params.require(:cocktail).permit(:name, :creator, :city, :ingredient, :garnish , :serving ,:image, :remove_image)
    end
 
 

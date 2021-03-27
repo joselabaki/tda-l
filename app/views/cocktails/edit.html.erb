@@ -22,7 +22,11 @@
 
       <%= f.label :image  %>
       <%= f.file_field :image%><br>
-      
+
+<% if @cocktail.image.attached? %>
+      <%= f.label :remove_image %>
+      <%= f.check_box :remove_image %><br>
+<% end %>
       <%= f.submit "Save Changes" %>
     <% end %>
   </div>
