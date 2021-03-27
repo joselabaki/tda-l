@@ -47,3 +47,50 @@
   color: $ciel;
 
 }}
+
+///////////////////////// HOME PAGE //////////////////////////
+
+
+.product-content {
+margin: auto;
+margin-top: 5%;
+position: relative;
+text-align: center;
+img{height:700px;}
+.product-name-home{
+  font-family: Love , sans-serif;
+  font-size: 4em;
+  color: $ciel;
+}
+#b-r{width: 2%;
+position: absolute;
+right: 35%;
+top:80%;
+}
+#b-l{width: 2%;
+position: absolute;
+left: 35%;
+top:80%;
+}
+#t-r{width: 2%;
+position: absolute;
+right: 35%;
+bottom:70%;
+}
+#t-l{width: 2%;
+position: absolute;
+left: 35%;
+bottom:70%;
+}
+
+.overlay{
+position: absolute;
+ top: 40%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-family: Love, sans-serif;
+ color: $ciel;
+ font-size: 8em;
+ display: none;
+}
+}
