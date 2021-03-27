@@ -18,7 +18,7 @@ margin-top: 7%;
 justify-content:center;
 align-items: center;
 text-align: center;
-.cocktail-image{}
+.cocktail-image{img{height: 700px;}}
 .cocktail-name {
   font-family: Love , sans-serif;
   font-size: 4em;
@@ -35,7 +35,7 @@ margin-top: 0;
 }
 }
 .name-author{
-  #download-icon, #share-icon{width: 3%;}
+#download-icon, #share-icon{width: 3%;}
 #download-icon{padding-right: 2%}
 #share-icon{padding-left: 2%;}
 }

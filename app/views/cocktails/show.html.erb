@@ -1,2 +1,6 @@
 <%= @cocktail.name %>, <%= @cocktail.creator %>
 <h1> <%= link_to "Update", edit_cocktail_path(@cocktail.id) %> |  <%= link_to 'Delete', @cocktail, method: :delete,  data: { confirm: "You sure? you want to delete"} %> <h1>
+<p>
+  <%=image_tag url_for(@cocktail.image) %>
+
+</p>

@@ -2,7 +2,11 @@
 <div class="big-box">
 <div class="title-box">
 
-<div class="cocktail-image"></div>
+<div class="cocktail-image">
+<% if c.image.present? %>
+
+  <%= image_tag url_for(c.image) %>
+<% end%></div>
 <div class="name-author">
   <p class="cocktail-name"><%= c.name%></p>
   <p class="cocktail-info"> <%= c.creator %> - <%= c.city %> </p>
