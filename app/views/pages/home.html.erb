@@ -2,16 +2,17 @@
 <%@products.each do |p| %>
 
 <div class="product-content">
-
+  <%if p.image.attached? %>
 <%=image_tag url_for(p.image) %>
+<% end%>
 <p class="overlay" id="story">The story</p>
 <p class="overlay" id="wine">The wine</p>
 <p class="overlay" id="order">order</p>
 <p class="overlay" id="cocktails-home">cocktails</p>
 
 <%=link_to shop_path do %><div id="b-r"><%= inline_svg_tag 'bottom-right.svg' %></div><% end%>
-<%=link_to about_path(anchor: "about-wine") do %><div id="b-l"><%= inline_svg_tag 'bottom-left.svg' %></div><%end%>>
-<%=link_to  stories_path do %><div id="t-r"><%= inline_svg_tag 'top-right.svg' %></div><% end %>
+<%=link_to about_path(anchor: "about-wine") do %><div id="b-l"><%= inline_svg_tag 'bottom-left.svg' %></div><%end%>
+<%=link_to  stories_path(anchor: p.island_name.to_s) do %><div id="t-r"><%= inline_svg_tag 'top-right.svg' %></div><% end %>
 <%=link_to  cocktails_path do %><div id="t-l"><%= inline_svg_tag 'top-left.svg' %></div> <% end %>
 
 

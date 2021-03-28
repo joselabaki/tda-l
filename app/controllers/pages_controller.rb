@@ -7,6 +7,7 @@ class PagesController < ApplicationController
 
 
   def stories
+    @products = Product.all.order('created_at ASC')
   end
 
   def contact

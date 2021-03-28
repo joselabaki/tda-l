@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
   end
 
   def index
-    @product = Product.all
+    @product = Product.all.order('created_at ASC')
 
   end
 
@@ -49,7 +49,7 @@ class ProductsController < ApplicationController
  private
 
    def product_params
-     params.require(:product).permit(:name, :story, :island, :info, :image, :remove_image)
+     params.require(:product).permit(:name, :story, :island, :island_name, :info, :image, :remove_image, :product_type, :cocktail_image,  :remove_cocktail_image)
    end
 
 

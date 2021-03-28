@@ -8,7 +8,7 @@
 ///// ABOUT PAGE /////
 
 .about-block{
-  width: 30%;
+  width: 70%;
   margin-left: 20%;
   margin-top: 5%;
 }
@@ -94,3 +94,27 @@ position: absolute;
  display: none;
 }
 }
+
+
+
+//////////////////////////STORIES PAGES///////////////////////
+
+.story-map{}
+
+.island-story , .island-story-switch{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-areas: 'image text';
+color: $ciel;
+#story-title{font-family: Love, sans-serif; font-size: 6em; }
+#product-name {font-family: AeonikB, sans-serif; font-size: 1.5em; margin: 2% 0;}
+#product-type{font-family: AeonikL, sans-serif; font-size: 1.6em; }
+#product-story{font-family: AeonikL, sans-serif; font-size: 1.6em; width: 50%;  white-space: pre-line; margin-top: 4%; margin-left: 15%;}
+#contribute{display: inline-flex; align-items: center; margin-left: 15%; margin-top: 10%;a{color: $ciel; font-family: AeonikL, sans-serif; font-size: 1.6em; &:hover{font-family: AeonikB, sans-serif; svg{width: 90px}}}; svg{width: 60px;}}
+margin: 10% auto;   width: 70%;
+};
+
+.story-info{grid-area: text}
+.story-image{grid-area: image}
+
+.island-story-switch{grid-template-areas: 'text image ';}

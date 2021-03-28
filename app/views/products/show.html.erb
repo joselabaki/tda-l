@@ -1,9 +1,24 @@
-<%= @product.name %>
-<h1> <%= link_to "Update", edit_product_path(@product.id) %> |  <%= link_to 'Delete', @product, method: :delete,  data: { confirm: "You sure? you want to delete"} %> <h1>
-<p>
+<h1>Product Name : <%= @product.name %><h1>
+
   <% if @product.image.attached? %>
   <%=image_tag url_for(@product.image) %>
 
 <%end%>
+<% if @product.cocktail_image.attached? %>
+<%=image_tag url_for(@product.cocktail_image) %>
 
-</p>
+<%end%>
+
+<div class="product-show-info">
+
+
+<h1>Island Name : <%= @product.island_name.capitalize %></h1>
+<h1> Island Shape<h1>
+<%= @product.island.html_safe %>
+<p> <%= link_to "Update", edit_product_path(@product.id) %> -  <%= link_to 'Delete', @product, method: :delete,  data: { confirm: "You sure? you want to delete"} %> <p>
+
+<%=@product.story %>
+
+
+
+</div>

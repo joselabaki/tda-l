@@ -32,7 +32,7 @@ $( "#b-r").mouseenter(function() {
 })
 
 $( "#b-r").mouseleave(function() {
-  $("#order").fadeOut("slow")
+  $("#order").fadeOut("fast")
 })
 
 $( "#t-r").mouseenter(function() {
@@ -40,7 +40,7 @@ $( "#t-r").mouseenter(function() {
 })
 
 $( "#t-r").mouseleave(function() {
-  $("#story").fadeOut("slow")
+  $("#story").fadeOut("fast")
 })
 
 $( "#t-l").mouseenter(function() {
@@ -48,7 +48,7 @@ $( "#t-l").mouseenter(function() {
 })
 
 $( "#t-l").mouseleave(function() {
-  $("#cocktails-home").fadeOut("slow")
+  $("#cocktails-home").fadeOut("fast")
 })
 
 
@@ -57,7 +57,7 @@ $( "#b-l").mouseenter(function() {
 })
 
 $( "#b-l").mouseleave(function() {
-  $("#wine").fadeOut("slow")
+  $("#wine").fadeOut("fast")
 })
 
 $( "#b-l").click(function() {
