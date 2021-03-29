@@ -1,11 +1,23 @@
-<div class="story-map"></div>
+<div class="story-map">
+
+<div class="island-moyra"><%=link_to  stories_path(anchor: 'moyra') do %><%= inline_svg  'islands/Moyra.svg'%> <p class='island-name-map'>Moyra <%=inline_svg 'dwn-arrow.svg' , id: 'dwn-arrow'%><p></div><% end %>
+<div class="island-adelma"><%=link_to  stories_path(anchor: 'Adelma') do %><%= inline_svg  'islands/Adelma.svg'%>  <p class='island-name-map'>Adelma <%=inline_svg 'dwn-arrow.svg' , id: 'dwn-arrow'%><p></div><%end%>
+<div class="island-fedora"><%= inline_svg  'islands/Fedora.svg'%> <p class='island-name-map'>Fedora<p></div>
+<div class="island-gula"><%= inline_svg  'islands/gula.svg'%> <p class='island-name-map'>Gula<p></div>
+<div class="island-tertia"><%= inline_svg  'islands/tertia.svg'%> <p class='island-name-map'>Tertia<p></div>
+<div class="island-the-arges"><%= inline_svg  'islands/the-arges.svg'%> <p class='island-name-map'>The Arges<p></div>
+
+
+
+
+
+
+</div>
 
 
 <%@products.each do |p| %>
 
 <div class="<%=p.id%>" id="<%=p.island_name%>">
-
-
 <div class= "island-story">
 <div class="story-info">
   <div id="story-title"><%=p.island_name %></div>
@@ -16,10 +28,7 @@
 </div>
 
 
-<div class="story-image">
-  <%if p.cocktail_image.attached? %><div id="cocktail_image"> <%= image_tag(p.cocktail_image) %></div><% end %>
-
-</div>
+<div class="story-image"><%if p.cocktail_image.attached? %><div id="cocktail_image"> <%= image_tag(p.cocktail_image) %></div><% end %></div>
 
 
 </div>

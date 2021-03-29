@@ -23,12 +23,18 @@
 <div class="side-info">
 <p class="cocktail-com">Garnish</p>
 <p class="cocktail-ing"><%= c.garnish %></p>
-<p class="spacer"></p>
 <p class="cocktail-com">Serving</p>
 <p class="cocktail-ing"><%= c.serving %></p>
+
 </div>
 </div>
 <div class="big-spacer"></div>
 </div>
 
 <% end %>
+
+
+<div class="call-recipe">
+<a href="mailto:joe@example.com?subject=feedback">Share your Recipe</a>
+<%= inline_svg_tag 'Arrow.svg' , id: 'share-arrow'%>
+</div>

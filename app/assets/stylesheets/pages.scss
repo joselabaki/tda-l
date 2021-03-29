@@ -99,22 +99,48 @@ position: absolute;
 
 //////////////////////////STORIES PAGES///////////////////////
 
-.story-map{}
+.story-map{
+  text-align: center;
+.island-name-map{font-family: Love, sans-serif; color: $ciel;font-size: 2.5vw; display: inline-flex;}
+.island-adelma{width: 20%; position: absolute; top: 45%; left:35%; };
+.island-moyra{width: 12%;position: absolute; top: 75%; left:70%}
+.island-fedora{width: 8%;position: absolute; top: 20%; left:20%}
+.island-the-arges{width: 5%; position: absolute; top: 70%; left:20%}
+.island-tertia{width: 8%;position: absolute; top: 20%; left:50%};
+.island-gula{width: 3%;position: absolute; top: 25%; left:80%}
+height: 1200px;
+border-bottom: 2px solid $or;
+svg{.cls-1{fill:$ciel;}}
+p{margin: 8% auto; margin-left: 10%}
+
+};
+
+#dwn-arrow{width: 80px; display: none;};
+
+.hovered-island{
+svg{.cls-1{fill:$or;}}
+  .island-name-map{color: $or;
+  #dwn-arrow{display: block}
+
+}}
+
+.spacer{margin-top: 500px; background-color: red;}
 
 .island-story , .island-story-switch{
+
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-areas: 'image text';
 color: $ciel;
-#story-title{font-family: Love, sans-serif; font-size: 6em; }
+#story-title{font-family: Love, sans-serif; font-size: 6em; margin-top: 10%;}
 #product-name {font-family: AeonikB, sans-serif; font-size: 1.5em; margin: 2% 0;}
 #product-type{font-family: AeonikL, sans-serif; font-size: 1.6em; }
 #product-story{font-family: AeonikL, sans-serif; font-size: 1.6em; width: 50%;  white-space: pre-line; margin-top: 4%; margin-left: 15%;}
 #contribute{display: inline-flex; align-items: center; margin-left: 15%; margin-top: 10%;a{color: $ciel; font-family: AeonikL, sans-serif; font-size: 1.6em; &:hover{font-family: AeonikB, sans-serif; svg{width: 90px}}}; svg{width: 60px;}}
-margin: 10% auto;   width: 70%;
+margin-left: 10% ; margin-top: 10%;;   width: 70%;
 };
 
 .story-info{grid-area: text}
-.story-image{grid-area: image}
+.story-image{grid-area: image; margin-top: 10%;}
 
 .island-story-switch{grid-template-areas: 'text image ';}

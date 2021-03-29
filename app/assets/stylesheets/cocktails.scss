@@ -65,3 +65,21 @@ margin-bottom: 0;
   .spacer{height: 8%;}
 }
 .big-spacer{height: 300px; }
+
+////////CALL FOR RECIPE ////
+.call-recipe{
+display: grid;
+align-items: center;
+grid-template-columns: 1fr 1fr;
+grid-column-gap: 70px;
+a{font-family: Love , sans-serif; font-size: 5vw; color: $ciel;
+&:hover{color: $or}
+}
+display: inline-grid;
+svg{width: 300px; .cls-1{fill:$or}}
+#share-arrow{display: none}
+&:hover{
+  #share-arrow{display: block;}
+
+}
+}

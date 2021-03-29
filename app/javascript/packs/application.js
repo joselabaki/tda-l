@@ -64,8 +64,13 @@ $( "#b-l").click(function() {
   $(".block-text").show()
 })
 
+$( ".island-moyra , .island-adelma").mouseenter(function() {
+  $(this).addClass("hovered-island")
+})
 
-
+$( ".island-moyra, .island-adelma").mouseleave(function() {
+  $(this).removeClass("hovered-island")
+})
 
 
 }

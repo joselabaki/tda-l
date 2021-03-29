@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'contact', to:'pages#contact'
   get 'shop', to:'pages#shop'
   get 'home', to:'pages#home'
+  get 'legal', to:'pages#legal'
 
 
   resources :cocktails

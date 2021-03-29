@@ -20,6 +20,8 @@ class PagesController < ApplicationController
    @products = Product.all
  end
 
+def legal
+end
 
 
 end

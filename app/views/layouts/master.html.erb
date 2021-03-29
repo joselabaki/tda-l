@@ -20,7 +20,7 @@
 <div class="master-container">
 
 
-    <div class="top-nav">
+    <div class="top-nav" , id="top-nav">
       <div class="logo-nav">
         <%= link_to home_path do %><%= inline_svg_tag 'TdA-Logo.svg'%><% end %>
       </div>
@@ -41,10 +41,30 @@
 
 
 
-
-
     <%= yield %>
+<div class="footer-master">
+<div class="subscribe-footer">subscribe</div>
+<div class="visit-footer"><p class="footer-head">Visit</p><p class="footer-details">9 Place de la Madeleine, Paris, Île-de-France, 75010</p></div>
+<div class="contact-footer"><p class="footer-head">Get in touch</p>
+<p class="footer-details">
+<%= link_to 'Instagram' , "https://www.instagram.com/terresdailleurs" , target: "_blank" %><br>
+<%= link_to 'Facebook' , "https://www.instagram.com/terresdailleurs" , target: "_blank" %><br>
+<%= link_to mail_to "info@lesterresdailleurs.com" , "Email" ,  subject: "Hey Terres d'Ailleurs!" ,  target:"_blank"%>
+</p></div>
+<div class="legal-footer"><p class="footer-head">Legal Info<p>
+  <p class="footer-details"><%= link_to "Privacy Policy", legal_path  , target: "_blank" %><br>
+<%= link_to "Terms & Conditions", legal_path  , target: "_blank" %><br>
+<%= link_to "Return Policy", legal_path  , target: "_blank" %><br></div>
 
+<div class="copy-footer"><p class="footer-head">Copyright</p>
+  <p class="footer-details">
+  2021 Copyright ©<br>
+  <%= link_to 'design by labaki.design' , "http://www.labaki.design" , target: "_blank" %><br><p>
+</div>
+<div class="upwards-footer"><a href="#top-nav"><%= inline_svg 'upwards.svg' %></a> <p class="footer-details" id="back-top">back to top</p></div>
+
+
+</div>
     </div>
 </body>
 

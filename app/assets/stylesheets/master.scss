@@ -3,23 +3,30 @@
 
 body{
   background-color: $sable;
+
+    height: 100%;
+
 }
 
 
 
 .master-container {
   margin: auto 5%;
+  min-height: 100%;
+height: auto !important;
+height: 100%;
+//margin: 0 auto -50px;
 }
 
 
-
+///////////////////Mavifation///////////
 
 .top-nav{
   margin-top: 2%;
   display: grid;
   grid-template-columns: 10% auto;
   padding-bottom: 30px;
-
+  //height: 150px;
   .links {
     display: inline-flex;
     justify-content: flex-end;
@@ -29,6 +36,26 @@ body{
       a{color: $ciel; &:hover{border-bottom: 2px solid $ciel;}};
       p{padding-right: 6%; }
       #arrow-nav{width: 5%;}
-      #shop{padding-right: 10px;; a{&:hover{border-bottom: 0px;}}}
+      #shop{padding-right: 10px; a{&:hover{border-bottom: 0px;}}}
   }
+}
+/////////////////////////footer ////////////////////
+
+.footer-master{
+
+    margin-top: 300px;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    border-top: 1px solid $ciel;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 100px;
+    p{margin: 0;}
+.footer-head, .footer-details, {font-family: AeonikB; font-size: .7vw;color: $ciel; }
+.footer-details{font-family: AeonikL , sans-serif; margin-top: 15px;a{color: $ciel;font-family: AeonikL;}  a{&:hover{color:$or}}}
+.upwards-footer {
+  height: 100px;
+  svg{height: 40%; margin-top: 10%;}&:hover{.cls-1{fill:$or}#back-top{display: block}} }
+  #back-top{position: relative; bottom: 50px; left: 50px; display: none; color: $or}
+
 }
