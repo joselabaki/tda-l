@@ -1,0 +1,35 @@
+
+
+<div class="cms-box">
+<p id='cms-head'>Product</p>
+<% @products.each do |p| %>
+<div class="cms-table">
+<div class="cms-name"><%= p.name %> </div>
+<div class="cms-name"><%= link_to 'Edit', edit_product_path(p) %></div>
+<div class="cms-name"><%= link_to 'Delete', product_path(p),method: :delete, data: { confirm: 'Are you sure?' }%></div>
+
+</div>
+<% end %>
+
+
+<%= link_to '  + Create Project', new_product_path,  class:"create-button" %>
+
+
+</div>
+
+<div class="cms-box">
+<p id='cms-head'>Cocktail</p>
+<% @cocktails.each do |p| %>
+<div class="cms-table">
+<div class="cms-name"><%= p.name %> </div>
+<div class="cms-name"><%= link_to 'Edit', edit_cocktail_path(p) %></div>
+<div class="cms-name"><%= link_to 'Delete', cocktail_path(p),method: :delete, data: { confirm: 'Are you sure?' }%></div>
+
+</div>
+<% end %>
+
+
+<%= link_to ' + Create Cocktail', new_cocktail_path,  class:"create-button" %>
+
+
+</div>

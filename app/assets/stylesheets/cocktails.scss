@@ -83,3 +83,25 @@ svg{width: 300px; .cls-1{fill:$or}}
 
 }
 }
+
+
+
+
+////////// CREATE //////
+.create-box{
+  margin-top: 70px;
+  textarea, input {
+    outline: none;
+    border: none;
+    margin-left: 15px;
+    font-family: AeonikL; font-size: .7vw; color: $ciel;
+  }};
+
+.create-head {
+font-family: Aeonik; color: $ciel; font-size: .8vw;
+margin: 20px 0;
+#textarea{margin-left: 0; font-family: AeonikL; font-size: .7vw;}
+};
+
+
+.head-creator{font-family: Love, sans-serif;color: $ciel; font-size: 3vw; margin-bottom: 0px;}

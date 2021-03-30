@@ -1,34 +1,44 @@
 
-<div class="row">
+<p class="head-creator">Edit <%=@cocktail.name %></p>
+
+<div class="row create-box">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@cocktail) do |f| %>
-      <%= f.label :name %>
-      <%= f.text_field :name %><br>
+    <div class="create-head"><%= f.label :name , "Cocktail Name"%><%= f.text_field :name , size: '30'%></div>
 
-      <%= f.label :creator %>
-      <%= f.text_field :creator %><br>
 
-      <%= f.label :city %>
-      <%= f.text_field :city %><br>
+          <div class="create-head"><%= f.label :creator %>
+          <%= f.text_field :creator %></div>
 
-      <%= f.label :ingredient %>
-      <%= f.text_area :ingredient ,  size: "100x10" %><br>
+          <div class="create-head">
+                <%= f.label :city %>
+                <%= f.text_field :city %></div>
 
-      <%= f.label :garnish %>
-      <%= f.text_area :garnish,  size: "100x10" %><br>
+                <div class="create-head">
+                      <%= f.label :ingredient , "Ingredients"%><br>
+                      <%= f.text_area :ingredient ,  size: "60x10" , placeholder: 'Please respect the layout' , id:'textarea'%></div>
+                      <div class="create-head">
 
-      <%= f.label :serving %>
-      <%= f.text_area :serving ,  size: "100x10"%><br>
+                      <%= f.label :garnish %><br>
+                      <%= f.text_area :garnish,  size: "60x10" , placeholder: 'Please respect the layout' , id:'textarea'%></div>
 
-      <%= f.label :image  %>
-      <%= f.file_field :image%><br>
+                      <div class="create-head">
+                      <%= f.label :serving %><br>
+                      <%= f.text_area :serving ,  size: "60x10", placeholder: 'Please respect the layout' , id:'textarea'%></div>
+                      <div class="create-head">
+                      <%= f.label :image , "Cocktail Image"  %>
+                      <%= f.file_field :image%></div>
 
 <% if @cocktail.image.attached? %>
-      <%= f.label :remove_image %>
-      <%= f.check_box :remove_image %><br>
-<% end %>
+<div class="create-head">
 
-      <%= f.submit "Save Cocktail Changes" %>
+
+      <%= f.label :remove_image, "Remove Cocktail Image" %>
+      <%= f.check_box :remove_image %>
+<% end %>
+</div>
+
+      <%= f.submit 'Save ' +  @cocktail.name + ' Changes', class:'create-button' , id:'button-form'%>
     <% end %>
   </div>
 </div>

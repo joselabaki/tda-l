@@ -1,0 +1,33 @@
+// Place all the styles related to the Backend controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+#cms-head{font-family: AeonikB; color:$ciel; font-size: 1vw;}
+
+  .create-button{
+    position: absolute;
+    padding: 15px;
+    border: 1px solid $ciel;
+    margin: 0 0;
+    color: $ciel;
+    &:hover{
+      background-color: $ciel;
+      color: $hiver;
+
+    }
+  }
+
+.cms-table{
+width: 30%;
+display: grid;
+grid-template-columns: repeat(3 , 1fr);
+.cms-name{
+  font-family: Aeonik; color: $ciel; font-size: 0.7vw;
+  a{color: $ciel};
+  margin-bottom: 15px;
+}
+}
+
+.cms-box{
+  margin-bottom: 100px;
+}

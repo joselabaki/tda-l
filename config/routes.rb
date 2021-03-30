@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
 
 
+  get 'cms', to: 'backend#cms'
   get 'stories', to: 'pages#stories'
   get 'about', to:'pages#about'
   get 'contact', to:'pages#contact'

@@ -1,45 +1,46 @@
-<h1>Edit <%=@product.name %></h1>
-<div class="row">
+<p class="head-creator">Edit <%= @product.name %> </p>
+<div class="row create-box">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@product) do |f| %>
-      <%= f.label :name %>
-      <%= f.text_field :name %><br>
+    <div class="create-head">  <%= f.label :name %>
 
+      <%= f.text_field :name %></div>
+      <div class="create-head">
       <%= f.label :product_type %>
-      <%= f.text_field :product_type , placeholder:'Wine of ... , jam of ....'%><br>
+      <%= f.text_field :product_type , placeholder:'Wine of ... , jam of ....'%></div>
+<div class="create-head">
+      <%= f.label :story %><br>
+      <%= f.text_area :story ,  size: "100x10", id:'textarea' %></div>
+      <div class="create-head">
+            <%= f.label :island_name %>
+            <%= f.text_field :island_name %></div>
+<div class="create-head">
+      <%= f.label :island , "Island Shape"%><br>
+      <%= f.text_area :island , placeholder: 'Insert svg code', id:'textarea'%></div>
 
+<div class="create-head">
+      <%= f.label :info %><br>
+      <%= f.text_area :info ,  size: "100x10" , id:'textarea'%></div>
 
-      <%= f.label :story %>
-      <%= f.text_area :story ,  size: "100x10" %><br>
+<div class="create-head">
 
-      <%= f.label :island %>
-      <%= f.text_area :island , placeholder: 'Insert svg code'%><br>
-
-      <%= f.label :island_name %>
-      <%= f.text_field :island_name %><br>
-
-      <%= f.label :info %>
-      <%= f.text_area :info ,  size: "100x10" %><br>
-
-
-
-      <%= f.label :image , 'Product Image' %>
-      <%= f.file_field :image%><br>
-
+      <%= f.label :image , "Product Image" %>
+      <%= f.file_field :image%></div>
+<div class="create-head">
       <%= f.label :cocktail_image  %>
-      <%= f.file_field :cocktail_image%><br>
-
+      <%= f.file_field :cocktail_image%></div>
+<div class="create-head">
       <% if @product.image.attached? %>
             <%= f.label :remove_image %>
-            <%= f.check_box :remove_image %><br>
+            <%= f.check_box :remove_image %></div>
       <% end %>
-
+<div class="create-head">
       <% if @product.cocktail_image.attached? %>
             <%= f.label :remove_cocktail_image %>
-            <%= f.check_box :remove_cocktail_image %><br>
+            <%= f.check_box :remove_cocktail_image %></div>
       <% end %>
 
-      <%= f.submit "Save Product Changes" %>
+      <%= f.submit 'Save ' +  @product.name + ' Changes', class:'create-button' , id:'button-form' %>
     <% end %>
   </div>
 </div>

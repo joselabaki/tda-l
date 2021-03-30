@@ -1,30 +1,33 @@
 
-<div class="row">
+<p class="head-creator">Create a Cocktail</p>
+<div class="row create-box">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@cocktail) do |f| %>
-      <%= f.label :name %>
-      <%= f.text_field :name %><br>
+      <div class="create-head"><%= f.label :name , "Cocktail Name"%><%= f.text_field :name , size: '30'%></div>
 
-      <%= f.label :creator %>
-      <%= f.text_field :creator %><br>
-
+      <div class="create-head"><%= f.label :creator %>
+      <%= f.text_field :creator %></div>
+<div class="create-head">
       <%= f.label :city %>
-      <%= f.text_field :city %><br>
+      <%= f.text_field :city %></div>
+<div class="create-head">
+      <%= f.label :ingredient , "Ingredients"%><br>
+      <%= f.text_area :ingredient ,  size: "60x10" , placeholder: 'Please respect the layout' , id:'textarea'%></div>
 
-      <%= f.label :ingredient %>
-      <%= f.text_area :ingredient ,  size: "100x10" %><br>
+      <div class="create-head">
 
-      <%= f.label :garnish %>
-      <%= f.text_area :garnish,  size: "100x10" %><br>
+      <%= f.label :garnish %><br>
+      <%= f.text_area :garnish,  size: "60x10" , placeholder: 'Please respect the layout' , id:'textarea'%></div>
 
-      <%= f.label :serving %>
-      <%= f.text_area :serving ,  size: "100x10"%><br>
-
+      <div class="create-head">
+      <%= f.label :serving %><br>
+      <%= f.text_area :serving ,  size: "60x10", placeholder: 'Please respect the layout' , id:'textarea'%></div>
+      <div class="create-head">
       <%= f.label :image  %>
-      <%= f.file_field :image%><br>
+      <%= f.file_field :image%></div>
 
 
-      <%= f.submit "Create Cocktail" %>
+      <%= f.submit "Create Cocktail" , class:'create-button' , id:'button-form'%>
     <% end %>
   </div>
 </div>
