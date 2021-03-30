@@ -57,7 +57,10 @@ height: 100%;
   height: 100px;
   svg{height: 40%; margin-top: 10%;}&:hover{.cls-1{fill:$or}#back-top{display: block}} }
   #back-top{position: relative; bottom: 50px; left: 50px; display: none; color: $or}
-
+  .newsletter-master{margin: 0 0;}
+  #email-field{ border-bottom: 1px solid $ciel; color: $ciel}
+#sub-text{font-family: AeonikB; color: $ciel; font-size: .7vw};
+#subscribe-btn{width: 15px; margin-left: 25px;}
 }
 
 ///////ADMIN LOGOUT////

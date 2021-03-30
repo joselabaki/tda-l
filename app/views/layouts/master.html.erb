@@ -41,13 +41,29 @@
 
 
 
-      <%debug(params) if Rails.env.development? %>
 
 
 
     <%= yield %>
 <div class="footer-master">
-<div class="subscribe-footer">subscribe</div>
+<div class="subscribe-footer">
+<div class="newsletter-master">
+<div class="text-success" id="sub-text">Subscribe</div>
+    <%= form_tag('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do %>
+      <div class="updates">
+      <%= email_field(:email, :address, {id: "email-field", placeholder: "Your email"}) %>
+      <%= inline_svg 'Submit.svg' , id:'subscribe-btn' %>
+      <div id="emailMsg"></div>
+    </div>
+
+      <% end %>
+
+  </div>
+
+
+
+
+</div>
 <div class="visit-footer"><p class="footer-head">Visit</p><p class="footer-details">9 Place de la Madeleine, Paris, Île-de-France, 75010</p></div>
 <div class="contact-footer"><p class="footer-head">Get in touch</p>
 <p class="footer-details">

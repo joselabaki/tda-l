@@ -12,8 +12,10 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
+document.addEventListener("turbolinks:load", function() {
 
-window.onload = function() {
+
+
 
 $( ".block-title").click(function() {
    $(this).next().slideToggle()
@@ -83,6 +85,62 @@ $( ".island-moyra, .island-adelma").mouseleave(function() {
            }
           });
 
+          // current value of the location href attribute
 
 
-}
+      //FOOTER ACTIVATION
+
+      $("#submit_btn").attr('disabled', 'disabled');
+
+      $("#email-field").keyup(function(){
+            if(validateEmail()){
+              // if the email is validated
+              // set input email border green
+              $("#email-field").css("border-bottom","1px solid #9b883b");
+
+              $("#emailMsg").html("<p class='text-success'>valid email</p>");
+
+              $( "#submit_btn" ).click(function() {
+                $("#emailMsg").html("<p class='text-success'>subscribed!</p>")
+                      });
+
+            }else{
+
+              $("#email-field").css("border-bottom","1px solid  #e62020");
+              $("#emailMsg").html("<p class='text-danger'>invalid email</p>");
+              $( "#submit_btn" ).click(function() {
+                $("#emailMsg").html("<p class='text-danger'>check your email again</p>")
+                      });
+            }
+            buttonState();
+          });
+
+          function buttonState(){
+              if(validateEmail() ){
+                // if the both email and password are validate
+                // then button should show visible
+                $("#submit_btn").removeAttr("disabled")
+
+              }else{
+                // if both email and pasword are not validated
+                // button state should hidden
+                $("#submit_btn").attr('disabled', 'disabled');
+              }
+            } //Button State
+
+            function validateEmail(){
+                // get value of input email
+                var email=$("#email-field").val();
+                // use reular expression
+                 var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+                 if(reg.test(email)){
+                  return true;
+                 }else{
+                  return false;
+                 }
+
+              }
+
+
+
+});
