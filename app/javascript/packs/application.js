@@ -73,4 +73,16 @@ $( ".island-moyra, .island-adelma").mouseleave(function() {
 })
 
 
+        var current = window.location.pathname.split('?')[0];
+        console.log(current)
+        $('.links a').each(function(){
+            var $this = $(this);
+            console.log($this)
+            if($this.attr('href').indexOf(current) !== -1){
+               $this.parent().addClass('active-link');
+           }
+          });
+
+
+
 }

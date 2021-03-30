@@ -1,4 +1,5 @@
 class CocktailsController < ApplicationController
+  before_action :authenticate_admin!,  only: [:new, :show, :edit, :update, :destroy]
 
 layout  'master'
 

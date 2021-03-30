@@ -1,0 +1,26 @@
+<div class="master-container">
+
+
+<p class="head-creator">Admin LoGin</p>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="create-head">
+
+
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", id:'textarea' %>
+  </div>
+
+  <div class="create-head">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password" , id:'textarea'%>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit "Log in" , class:'create-button' , id:'button-form' %>
+  </div>
+<% end %>
+
+
+</div>

@@ -33,7 +33,7 @@ height: 100%;
     align-items: center;
     text-transform: capitalize;
     font-size: 1em;
-      a{color: $ciel; &:hover{border-bottom: 2px solid $ciel;}};
+      a{color: $ciel; &:hover{border-bottom: 2px solid $ciel;} padding-bottom: 10px;};
       p{padding-right: 6%; }
       #arrow-nav{width: 5%;}
       #shop{padding-right: 10px; a{&:hover{border-bottom: 0px;}}}
@@ -59,3 +59,10 @@ height: 100%;
   #back-top{position: relative; bottom: 50px; left: 50px; display: none; color: $or}
 
 }
+
+///////ADMIN LOGOUT////
+.links{
+.admin-logout{ margin-left: 20px; a{color: red;} }}
+
+
+.active-link{a{padding-bottom: 10px;border-bottom: 2px solid $ciel;}}

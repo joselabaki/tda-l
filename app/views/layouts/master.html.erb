@@ -16,11 +16,13 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
 
 <div class="master-container">
 
 
-    <div class="top-nav" , id="top-nav">
+    <div class="top-nav"  id="top-nav">
       <div class="logo-nav">
         <%= link_to home_path do %><%= inline_svg_tag 'TdA-Logo.svg'%><% end %>
       </div>
@@ -32,6 +34,8 @@
       <p><%= link_to "contact", contact_path %></p>
       <p id="shop"><%= link_to "shop", shop_path %></p>
       <%= inline_svg_tag 'Arrow.svg' , id: 'arrow-nav'%>
+      <%if current_admin %>
+<div class="admin-logout"><%= link_to "Log out", destroy_admin_session_path, :method => :delete , class:'admin-logout'%></div><% end %>
       </div><!--links-->
     </div>
 
