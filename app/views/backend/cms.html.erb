@@ -1,5 +1,7 @@
 
-
+<% if browser.device.mobile? %>
+<p>unavaible</p>
+<%else%>
 <div class="cms-box">
 <p id='cms-head'>Product</p>
 <% @products.each do |p| %>
@@ -33,3 +35,4 @@
 
 
 </div>
+<%end%>

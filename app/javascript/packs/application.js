@@ -15,6 +15,18 @@ ActiveStorage.start()
 document.addEventListener("turbolinks:load", function() {
 
 
+$("body").removeClass("preload")
+
+
+
+$(".burger").click(function(){
+$(".top-nav-mobile").addClass("open")
+});
+
+
+$(".close-svg").click(function(){
+$(".top-nav-mobile").removeClass("open")
+});
 
 
 $( ".block-title").click(function() {

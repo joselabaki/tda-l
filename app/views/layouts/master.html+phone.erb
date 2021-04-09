@@ -15,37 +15,40 @@
 
   </head>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
+  <body class="preload">
+
+
+        <div class="mobile-header">
+          <div class="logo-nav"><%= link_to home_path do %><%= inline_svg_tag 'TdA-Logo.svg'%><% end %></div>
+          <div class="burger"><%= inline_svg_tag 'burger.svg' %></div>
+        </div>
+
+            <div class="top-nav-mobile"  id="top-nav">
+
+
+              <div class="close-svg"><%= inline_svg_tag 'close.svg' %></div>
+
+
+              <div class="links">
+
+              <p><%= link_to "about", about_path %></p>
+              <p><%= link_to "cocktails", cocktails_path %></p>
+              <p><%= link_to "stories", stories_path %></p>
+              <p><%= link_to "contact", contact_path %></p>
+              <p id="shop"><%= link_to "shop", shop_path %>
+</p>
+              </div><!--links-->
+            </div>
+
+
 
 <div class="master-container">
 
 
-    <div class="top-nav"  id="top-nav">
-      <div class="logo-nav">
-        <%= link_to home_path do %><%= inline_svg_tag 'TdA-Logo.svg'%><% end %>
-      </div>
-
-      <div class="links">
-      <p><%= link_to "about", about_path %></p>
-      <p><%= link_to "cocktails", cocktails_path %></p>
-      <p><%= link_to "stories", stories_path %></p>
-      <p><%= link_to "contact", contact_path %></p>
-      <p id="shop"><%= link_to "shop", shop_path %></p>
-      <%= inline_svg_tag 'Arrow.svg' , id: 'arrow-nav'%>
-      <%if current_admin %>
-<div class="admin-logout"><%= link_to "Log out", destroy_admin_session_path, :method => :delete , class:'admin-logout'%></div><% end %>
-      </div><!--links-->
-    </div>
 
 
 
-
-
-
-    <%= yield %>
-<div class="footer-master">
+<div class="footer-master-mobile" style="display:none">
 <div class="subscribe-footer">
 <div class="newsletter-master">
 <div class="text-success" id="sub-text">Subscribe</div>
