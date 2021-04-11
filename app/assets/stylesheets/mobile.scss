@@ -17,14 +17,14 @@ grid-template-columns: 80% 20%;
 
 .logo-nav{
 margin-left: 10px;
-svg{height: 40px;}}
+svg{height: 40px; .cls-1{fill:$ciel}}}
 
 .burger{
 margin-right: 10px;
 display: grid;
 align-items: center;
 justify-content: end;
- svg{height: 20px;}}
+ svg{height: 20px;.cls-1{fill:$ciel}}}
 }
 
 
@@ -37,7 +37,7 @@ height: 100vh;
 z-index: 1;
 overflow-x: hidden;
 width: 100vw;
-.close-svg{margin-top: 20px; svg{height: 20px; float: right; margin-right: 30px;}}
+.close-svg{margin-top: 30px; svg{height: 20px; float: right; margin-right: 30px;.cls-1{fill:$ciel}}}
 
 
 
