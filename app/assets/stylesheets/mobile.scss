@@ -11,6 +11,7 @@
 //  background-color: yellow;
 margin: 0;
 padding: 0;
+padding-top: 20px;
 display: grid;
 grid-template-columns: 80% 20%;
 
@@ -90,7 +91,24 @@ height: 1200px;
 }
 
 .footer-head{font-family: AeonikB; font-size: 1rem; color: $ciel; padding-bottom: 0px; margin-bottom: 5px;}
-.ft-link{padding-top: 10px ;font-family: AeonikL; font-size: 1rem; color: $ciel; a{color: $ciel; font-family: AeonikL; }}
+.ft-link{padding-top: 10px ;font-family: AeonikL; font-size: 1rem; color: $ciel; a{color: $ciel; font-family: AeonikL; }}}
 
+
+
+
+//////////////////home
+.product-content-home{
+  margin: auto;
+  margin-top: 5%;
+  position: relative;
+  text-align: center;
+.image-mob{
+//height: 100vh;
+overflow: hidden; /*hide bounds of image */
+margin:0; /*reset margin of figure tag*/
+img{
+  margin:0 -150%;
+  width:280%;}
+}
 
 }

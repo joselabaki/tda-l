@@ -1,10 +1,23 @@
-<% provide(:title,'Home') %>
+
+
+<section id="home">
+
+
+
+
+
+
 <%@products.each do |p| %>
-<h1>PHONE</h1>
-<div class="product-content">
-  <%if p.image.attached? %>
+<div class="product-content-home">
+  <div class="image-mob">
+
+<%if p.image.attached? %>
 <%=image_tag url_for(p.image) %>
 <% end%>
+</div>
+
+<div class="op" style="display:none">
+
 <p class="overlay" id="story">The story</p>
 <p class="overlay" id="wine">The wine</p>
 <p class="overlay" id="order">order</p>
@@ -18,9 +31,11 @@
 
 </div>
 
+</div>
 
 
 
 
 
 <%end%>
+</section>
