@@ -78,6 +78,69 @@ $( "#b-l").click(function() {
   $(".block-text").show()
 })
 
+
+$( "#b-r-mobile").click(function() {
+  $("#order").fadeIn("slow")
+  $("#story").fadeOut("slow")
+  $("#wine").fadeOut("fast")
+  $("#cocktails-home").fadeOut("fast")
+})
+
+
+
+$( "#t-r-mobile").click(function() {
+  $("#story").fadeIn("slow")
+  $("#order").fadeOut("fast")
+  $("#wine").fadeOut("fast")
+  $("#cocktails-home").fadeOut("fast")
+})
+
+
+$( "#t-l-mobile").click(function() {
+  $("#cocktails-home").fadeIn("slow")
+  $("#order").fadeOut("fast")
+  $("#wine").fadeOut("fast")
+  $("#story").fadeOut("fast")
+
+})
+
+
+
+$( "#b-l-mobile").click(function() {
+  $("#wine").fadeIn("slow")
+  $("#cocktails-home").fadeOut("slow")
+  $("#order").fadeOut("fast")
+  $("#story").fadeOut("fast")
+  $("#about-wine-open").show();
+
+})
+
+
+$( "#b-l").click(function() {
+  $(".block-text").show()
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $( ".island-moyra , .island-adelma").mouseenter(function() {
   $(this).addClass("hovered-island")
 })

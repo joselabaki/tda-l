@@ -63,8 +63,6 @@ transition: transform 0.4s ;
 
 ////// master-container-mobile
 .master-container-mobile {
-  position: relative;
-height: 1200px;
 }
 
 
@@ -72,13 +70,11 @@ height: 1200px;
 
 .footer-master-mobile{
 
-  position:relative;
-  left:0px;
-  bottom:0px;
-  height:auto;
+  margin-top: 20vh;
   width:90vw;
-  padding-bottom: 30px;
-  margin-left: 5%;
+  padding-bottom: 40px;
+
+  margin-left: 20px;;
 
 #footer-text{color: $or;font-family: AeonikL ; padding-top:15px}
 .subscribe-footer{
@@ -102,13 +98,34 @@ height: 1200px;
   margin-top: 5%;
   position: relative;
   text-align: center;
-.image-mob{
-//height: 100vh;
-overflow: hidden; /*hide bounds of image */
-margin:0; /*reset margin of figure tag*/
-img{
-  margin:0 -150%;
-  width:280%;}
-}
+.image-mob{overflow: hidden; margin:0; margin-top:20px;
+  img{margin:0 -150%;width:280%;}}
 
+#b-r-mobile , #b-l-mobile, #t-r-mobile , #t-l-mobile {width: 10%; position:absolute; .cls-1{fill:$ciel}}
+
+#b-r-mobile{right: 10%;top:60%}
+#b-l-mobile{left: 10%;top:60%;}
+#t-r-mobile{right: 10%;bottom:80%;}
+#t-l-mobile{left: 10%;bottom:80%;}
+.overlay{
+position: absolute;
+ top: 35%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-family: Love, sans-serif;
+ color: $ciel;
+ font-size: 4rem;
+ display: none;
+}};
+
+
+
+
+/////// ABOUT
+.section-head{margin-left: 20px; font-family: AeonikB; font-size: 1.2rem; color: $ciel; margin-bottom: 20px;}
+#about-mobile{background-color: #f0f0f0;
+.about-block{margin: 0;width: 100vw; padding: 10vh 0; }
+.block-title{font-size: 3.437rem; padding: 20px 20px;}
+.block-text{font-size: 1.1rem; width: 80vw; line-height: 1.5;  margin-left:25px;
+}
 }
