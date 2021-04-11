@@ -1,10 +1,12 @@
 @import "variables";
 
+
+
 .preload * {
   transition: none !important
 }
 
-
+////// HEADER
 .mobile-header{
 //  background-color: yellow;
 margin: 0;
@@ -54,5 +56,41 @@ transition: transform 0.4s ;
 }
 .open{
   transform: translateX(0);
+
+}
+
+
+////// master-container-mobile
+.master-container-mobile {
+  position: relative;
+height: 1200px;
+}
+
+
+///////// FOOTER MASTER Mobile
+
+.footer-master-mobile{
+
+  position:relative;
+  left:0px;
+  bottom:0px;
+  height:auto;
+  width:90vw;
+  padding-bottom: 30px;
+  margin-left: 5%;
+
+#footer-text{color: $or;font-family: AeonikL ; padding-top:15px}
+.subscribe-footer{
+.updates{margin: 40px 0;#email-field{border-bottom: 1px solid $ciel; font-family: AeonikL ; color: $ciel}}
+#subscribe-btn{height: 20px; margin-left: 50px; .cls-1{fill:$ciel}}
+#sub-text{
+  font-family: AeonikB;
+  color: $ciel;
+  font-size: 1.5rem;}
+}
+
+.footer-head{font-family: AeonikB; font-size: 1rem; color: $ciel; padding-bottom: 0px; margin-bottom: 5px;}
+.ft-link{padding-top: 10px ;font-family: AeonikL; font-size: 1rem; color: $ciel; a{color: $ciel; font-family: AeonikL; }}
+
 
 }

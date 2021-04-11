@@ -42,16 +42,15 @@
 
 
 
-<div class="master-container">
+<div class="master-container-mobile">  
+</div>
 
 
-
-
-
-<div class="footer-master-mobile" style="display:none">
+<section>
+<div class="footer-master-mobile">
 <div class="subscribe-footer">
 <div class="newsletter-master">
-<div class="text-success" id="sub-text">Subscribe</div>
+<div class="text-success" id="sub-text">Subscribe to the Newsletter</div>
     <%= form_tag('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do %>
       <div class="updates">
       <%= email_field(:email, :address, {id: "email-field", placeholder: "Your email"}) %>
@@ -62,33 +61,36 @@
       <% end %>
 
   </div>
-
-
-
-
 </div>
-<div class="visit-footer"><p class="footer-head">Visit</p><p class="footer-details">9 Place de la Madeleine, Paris, Île-de-France, 75010</p></div>
-<div class="contact-footer"><p class="footer-head">Get in touch</p>
-<p class="footer-details">
-<%= link_to 'Instagram' , "https://www.instagram.com/terresdailleurs" , target: "_blank" %><br>
-<%= link_to 'Facebook' , "https://www.instagram.com/terresdailleurs" , target: "_blank" %><br>
-<%= link_to mail_to "info@lesterresdailleurs.com" , "Email" ,  subject: "Hey Terres d'Ailleurs!" ,  target:"_blank"%>
-</p></div>
-<div class="legal-footer"><p class="footer-head">Legal Info<p>
-  <p class="footer-details"><%= link_to "Privacy Policy", legal_path  , target: "_blank" %><br>
-<%= link_to "Terms & Conditions", legal_path  , target: "_blank" %><br>
-<%= link_to "Return Policy", legal_path  , target: "_blank" %><br></div>
+
+<div class="visit-footer"><p class="footer-head">Visit</p>
+<p class="ft-link">9 Place de la Madeleine, Paris, Île-de-France, 75010</p>
+<div class="contact-footer">
+  <p class="footer-head">Get in touch</p>
+<div class="footer-details">
+<div class="ft-link"><%= link_to 'Instagram' , "https://www.instagram.com/terresdailleurs" , target: "_blank" %></div>
+<div class="ft-link"><%= link_to 'Facebook' , "https://www.instagram.com/terresdailleurs" , target: "_blank" %></div>
+<div class="ft-link"><%= link_to mail_to "info@lesterresdailleurs.com" , "Email" ,  subject: "Hey Terres d'Ailleurs!" ,  target:"_blank"%></div>
+</div>
+<div class="legal-footer">
+  <p class="footer-head">Legal Info</p>
+  <div class="ft-link"><%= link_to "Privacy Policy", legal_path  , target: "_blank" %></div>
+  <div class="ft-link"><%= link_to "Terms & Conditions", legal_path  , target: "_blank" %></div>
+  <div class="ft-link"><%= link_to "Return Policy", legal_path  , target: "_blank" %></div>
+</div>
 
 <div class="copy-footer"><p class="footer-head">Copyright</p>
-  <p class="footer-details">
-  2021 Copyright ©<br>
-  <%= link_to 'design by labaki.design' , "http://www.labaki.design" , target: "_blank" %><br><p>
+  <div id="footer-text">2021 Copyright ©</div>
+  <div class="ft-link"><%= link_to 'design by labaki.design' , "http://www.labaki.design" , target: "_blank" %> </div>
 </div>
-<div class="upwards-footer"><a href="#top-nav"><%= inline_svg 'upwards.svg' %></a> <p class="footer-details" id="back-top">back to top</p></div>
 
 
 </div>
-    </div>
+</div></div>
+
+
+
+</section>
 </body>
 
 
