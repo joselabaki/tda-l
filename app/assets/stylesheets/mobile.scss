@@ -73,7 +73,6 @@ transition: transform 0.4s ;
   margin-top: 20vh;
   width:90vw;
   padding-bottom: 40px;
-
   margin-left: 20px;;
 
 #footer-text{color: $or;font-family: AeonikL ; padding-top:15px}
@@ -129,3 +128,32 @@ position: absolute;
 .block-text{font-size: 1.1rem; width: 80vw; line-height: 1.5;  margin-left:25px;
 }
 }
+
+//////// stories
+
+
+.story-map-mobile{
+  height: 90vh;
+  .island-name-map{font-family: Love, sans-serif; color: $ciel;font-size:1.3rem; text-align: center; margin-top: 0; padding-top: 0;}
+  .island-adelma, .island-fedora, .island-tertia, .island-moyra, .island-the-arges, .island-gula {position: relative; .cls-1{fill:$ciel}}
+  .island-adelma{width: 180px; left:90px; }
+  .island-fedora{width: 80px;   left: 30px;}
+  .island-tertia{width: 90px;  left: 180px}
+  .island-moyra{width: 105px; left:280px;}
+  .island-the-arges{width: 60px; left:30px;}
+  .island-gula{width: 30px; left:320px;}
+}
+
+
+.island-story-mobile{
+  margin-left: 20px;
+  #story-title{font-family: Love, sans-serif; font-size: 2.4rem; margin-top: 50px; color:$or; margin-bottom: 50px;}
+  #product-name{font-family: AeonikB, sans-serif; font-size: 1.2rem; color: $ciel;margin-bottom: 5px;}
+  #product-type{font-family: AeonikL, sans-serif; font-size: 1.1rem; color: $ciel;margin-bottom: 50px;}
+  #product-story{width: 80vw; font-family: AeonikL ,  sans-serif; font-size: 1.1rem; color: $ciel;}
+  #island-shape{ position: absolute; svg{height: 12vh;} left:150px; }
+  #contribute{
+    margin-top: 50px; margin-left: 20px;
+    a{display: grid; grid-template-columns: 1fr 1fr; align-items: center;
+      font-family: AeonikL ,  sans-serif; font-size: 1.1rem; color: $ciel;} svg{width: 100px;.cls-1{fill:$ciel}}}
+  }

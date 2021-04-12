@@ -63,3 +63,38 @@
 
   </div>
 </section>
+
+<section id="stories">
+  <p class="section-head" id="stories-head">Stories</p>
+  <div class="story-map-mobile">
+    <div class="island-tertia"><%= inline_svg  'islands/tertia.svg'%> <p class='island-name-map'>Tertia<p></div>
+      <div class="island-gula"><%= inline_svg  'islands/gula.svg'%> <p class='island-name-map'>Gula<p></div>
+    <div class="island-fedora"><%= inline_svg  'islands/Fedora.svg'%> <p class='island-name-map'>Fedora<p></div>
+  <div class="island-adelma"><%=link_to  stories_path(anchor: 'Adelma') do %><%= inline_svg  'islands/Adelma.svg'%>  <p class='island-name-map'>Adelma <%=inline_svg 'dwn-arrow.svg' , id: 'dwn-arrow'%><p></div><%end%>
+    <div class="island-moyra"><%=link_to  stories_path(anchor: 'moyra') do %><%= inline_svg  'islands/Moyra.svg'%> <p class='island-name-map'>Moyra <%=inline_svg 'dwn-arrow.svg' , id: 'dwn-arrow'%><p></div><% end %>
+  <div class="island-the-arges"><%= inline_svg  'islands/the-arges.svg'%> <p class='island-name-map'>The Arges<p></div>
+
+  </div>
+  <%@products.each do |p| %>
+
+  <div class="<%=p.id%>" id="<%=p.island_name%>">
+  <div class= "island-story-mobile">
+  <div class="story-info">
+    <div id="story-title"><%=p.island_name %></div>
+    <div id="island-shape"><%=p.island.html_safe %></div>
+    <div id="product-name"><%=p.name %></div>
+    <div id="product-type"><%=p.product_type %></div>
+    <div id="product-story"><%=p.story %></div>
+    <div id="contribute"><%= link_to contact_path do  %> Contribute to the story <%=inline_svg 'Arrow.svg'%><%end%></div>
+  </div>
+
+
+
+  </div>
+  </div>
+  <%end%>
+</section>
+
+<section>
+
+</section>
