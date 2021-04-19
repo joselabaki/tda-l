@@ -95,6 +95,50 @@
   <%end%>
 </section>
 
-<section>
+<section id="cocktails">
+  <p class="section-head" id="head-cocktails">Cocktails</p>
+  <% @cocktails.each do |c| %>
+
+  <div class="cocktail-mobile">
+
+  <div class="cocktail-image-mobile">
+    <% if c.image.present? %>
+    <%= image_tag url_for(c.image) %>
+  <% end%>
+  </div>
+  <div class="name-author-mobile">
+    <p class="cocktail-name"><%= c.name%></p>
+    <div class="cocktail-info"> <%= c.creator %> - <%= c.city %> </div>
+    <%= inline_svg_tag 'download.svg' , id:'download-icon'%>
+    <%= inline_svg_tag 'share.svg' , id:'share-icon'%>
+  </div>
+
+<div class="recipe-mobile">
+  <p class="cocktail-com">Ingredients</p>
+  <p class="cocktail-ing"><%= c.ingredient %></p>
+  <div class="side-info">
+  <p class="cocktail-com">Garnish</p>
+  <p class="cocktail-ing"><%= c.garnish %></p>
+  <p class="cocktail-com">Serving</p>
+  <p class="cocktail-ing"><%= c.serving %></p>
+
+  </div>
+</div>
+<div class="closing-cocktail">
+<p>Got a cocktail recipe?</p>
+<p id="share-mobile">
+<a href="mailto:joe@example.com?subject=feedback">
+  Share it with us  <%=inline_svg 'Arrow.svg' , id:'arrow-mobile'%> </a></p>
+</div>
+
+<%end%></div><!-- cocktail-mobile -->
+
+</section>
+
+<section id="contact-mobile">
+  <div class="inquire-title"><%= mail_to "me@domain.com" , "Share your cocktail recipe" ,  subject: "My Cocktail Recipes" ,  target:"_blank" %>  </div>    <%= inline_svg_tag 'Arrow.svg' , id: 'arrow-nav-mobile'%>
+
+
+
 
 </section>

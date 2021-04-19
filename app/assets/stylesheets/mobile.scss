@@ -75,7 +75,7 @@ transition: transform 0.4s ;
   padding-bottom: 40px;
   margin-left: 20px;;
 
-#footer-text{color: $or;font-family: AeonikL ; padding-top:15px}
+#footer-text{color: $or;font-family: AeonikL , sans-serif; padding-top:15px}
 .subscribe-footer{
 .updates{margin: 40px 0;#email-field{border-bottom: 1px solid $ciel; font-family: AeonikL ; color: $ciel}}
 #subscribe-btn{height: 20px; margin-left: 50px; .cls-1{fill:$ciel}}
@@ -121,7 +121,7 @@ position: absolute;
 
 
 /////// ABOUT
-.section-head{margin-left: 20px; font-family: AeonikB; font-size: 1.2rem; color: $ciel; margin-bottom: 20px;}
+.section-head{margin-left: 20px; font-family: AeonikB, sans-serif;; font-size: 1.2rem; color: $ciel; margin-bottom: 20px;}
 #about-mobile{background-color: #f0f0f0;
 .about-block{margin: 0;width: 100vw; padding: 10vh 0; }
 .block-title{font-size: 3.437rem; padding: 20px 20px;}
@@ -157,3 +157,77 @@ position: absolute;
     a{display: grid; grid-template-columns: 1fr 1fr; align-items: center;
       font-family: AeonikL ,  sans-serif; font-size: 1.1rem; color: $ciel;} svg{width: 100px;.cls-1{fill:$ciel}}}
   }
+
+
+
+//////////////coktails
+#cocktails{
+  background-color: $ciel;
+  #head-cocktails{color: $hiver; padding-top: 20px;}
+}
+.cocktail-mobile{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 10px;
+  color: $hiver;
+  * {margin: 0}
+  .cocktail-image-mobile{
+    display: grid;
+    justify-content: center;
+    img{width: 90vw;}
+  }
+  .cocktail-name {
+    font-family: Love , sans-serif;
+    font-size: 3.1rem;
+    margin-top: 20px;
+
+
+  }
+  .cocktail-info{
+  font-family: AeonikL, sans-serif;
+  font-size: 1rem;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+
+
+  }
+  .name-author-mobile{
+  #download-icon, #share-icon{width: 6vw; .cls-1{fill:$hiver} padding-top: 10px;}
+  #download-icon{padding-right: 15px}
+  #share-icon{padding-left: 15px;}
+  }
+
+.recipe-mobile{
+  text-align: left;
+  margin-left: 20px;
+  width: 90vw;
+  white-space: pre-line;
+  .cocktail-com{
+    font-family: AeonikB, sans-serif;
+    font-size: 1.1rem;
+    color: $sable;
+  }
+}
+.closing-cocktail{
+  display: grid;
+  text-align: left;
+  margin-left: 20px;
+  font-family: Aeonik, sans-serif;
+  width: 90vw;
+  font-size: 1.1rem;
+  color: $sable;
+  #share-mobile{a{color:$sable; font-family: Love, sans-serif; font-size: 2.2rem; padding-top: 15px; display: inline-flex;align-items: center; .cls-1{fill:$sable}
+}}
+  #arrow-mobile{width: 70px; padding-left: 10px;}
+}
+}
+
+#contact-mobile{
+background-color: $hiver;
+
+
+
+}

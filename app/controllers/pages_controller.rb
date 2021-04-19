@@ -18,6 +18,8 @@ class PagesController < ApplicationController
 
  def home
    @products = Product.all
+   @cocktails = Cocktail.all
+
  end
 
 def legal
