@@ -9,8 +9,11 @@
 ////// HEADER
 .mobile-header{
 //  background-color: yellow;
-margin: 0;
-padding: 0;
+width: 100vw;
+position: sticky;
+//top:0;left:0;
+//margin: 0;
+//padding: 0;
 padding-top: 20px;
 display: grid;
 grid-template-columns: 80% 20%;
@@ -20,7 +23,7 @@ margin-left: 10px;
 svg{height: 40px; .cls-1{fill:$ciel}}}
 
 .burger{
-margin-right: 10px;
+margin-right: 20px;
 display: grid;
 align-items: center;
 justify-content: end;
@@ -37,7 +40,7 @@ height: 100vh;
 z-index: 1;
 overflow-x: hidden;
 width: 100vw;
-.close-svg{margin-top: 30px; svg{height: 20px; float: right; margin-right: 30px;.cls-1{fill:$ciel}}}
+.close-svg{margin-top: 30px; svg{height: 20px; float: right; margin-right: 40px;.cls-1{fill:$ciel}}}
 
 
 
@@ -124,10 +127,10 @@ position: absolute;
 .section-head{margin-left: 20px; font-family: AeonikB, sans-serif;; font-size: 1.2rem; color: $ciel; margin-bottom: 20px;}
 #about-mobile{background-color: #f0f0f0;
 .about-block{margin: 0;width: 100vw; padding: 10vh 0; }
-.block-title{font-size: 3.437rem; padding: 20px 20px;}
 .block-text{font-size: 1.1rem; width: 80vw; line-height: 1.5;  margin-left:25px;
 }
 }
+
 
 //////// stories
 
@@ -227,7 +230,4 @@ position: absolute;
 
 #contact-mobile{
 background-color: $hiver;
-
-
-
 }

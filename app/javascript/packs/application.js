@@ -29,7 +29,7 @@ $(".top-nav-mobile").removeClass("open")
 });
 
 
-$( ".block-title").click(function() {
+$( ".block-title , .block-title-mobile ").click(function() {
    $(this).next().slideToggle()
 });
 

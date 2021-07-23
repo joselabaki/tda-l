@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
 
 
-  root 'landing#index'
+  root 'pages#home'
   post 'emailapi/subscribe' => 'emailapi#subscribe'
 
 

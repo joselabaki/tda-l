@@ -7,12 +7,18 @@
 
 ///// ABOUT PAGE /////
 
-.about-block{
+.about-block, .about-block-mobile{
   width: 70%;
   margin-left: 20%;
   margin-top: 5%;
 }
-.block-title{
+
+.about-block-mobile{
+    margin-top: 50px;
+    margin-left: 20px;
+
+}
+.block-title, .block-title-mobile{
   font-family: Love , sans-serif;
   font-size: 8.5em;;
   color: $ciel;
@@ -20,9 +26,11 @@
 
 }
 
+.block-title-mobile{font-size: 3em;padding-bottom: 30px;}
 
 
-.block-text{
+
+.block-text, .block-text-mobile{
   display: none;
   font-family: AeonikL;
   font-size: 1.25em;
@@ -32,6 +40,12 @@
   margin-left: 15%;
 }
 
+.block-text-mobile{
+font-size: 17px;
+margin-left: 2%;
+white-space: pre-line
+
+}
 //////CONCTACT PAGE /////
 
 .contact-page{margin-top: 5%;
@@ -144,3 +158,8 @@ margin-left: 10% ; margin-top: 10%;;   width: 70%;
 .story-image{grid-area: image; margin-top: 10%;}
 
 .island-story-switch{grid-template-areas: 'text image ';}
+
+
+
+
+/////
