@@ -124,10 +124,11 @@ position: absolute;
 
 
 /////// ABOUT
-.section-head{margin-left: 20px; font-family: AeonikB, sans-serif;; font-size: 1.2rem; color: $ciel; margin-bottom: 20px;}
+.section-head{margin-left: 20px; font-family: AeonikB, sans-serif; font-size: 1.2rem; color: $ciel; margin-bottom: 20px;}
 #about-mobile{background-color: #f0f0f0;
-.about-block{margin: 0;width: 100vw; padding: 10vh 0; }
-.block-text{font-size: 1.1rem; width: 80vw; line-height: 1.5;  margin-left:25px;
+.about-block{margin:0 ;width: 100vw; padding: 10vh 0; }
+.block-title{margin-left:20px ; font-size: 4em;}
+.block-text{font-size: 17px; width: 80vw; line-height: 1.5;  margin-left:25px;
 }
 }
 
@@ -230,4 +231,8 @@ position: absolute;
 
 #contact-mobile{
 background-color: $hiver;
+.inquire-title{font-size: 5px; padding: 10px 0;}
+#arrow-nav-mobile{
+  width: 50px;
+}
 }
